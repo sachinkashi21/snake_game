@@ -1,0 +1,39 @@
+*{
+    background-color: rgb(197, 228, 255);
+}
+
+body{
+    height:97vh;
+    width:97vw;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border: solid 2px rgb(0, 0, 0);
+    background-color: rgba(75, 32, 182, 0.384);
+}
+
+h1{
+    color:lime;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+footer{
+    font-size: 24px;
+    text-align: end;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    color: aliceblue;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+#S{
+    position: fixed;
+    display:inline;
+    top:20px;
+    left:10px;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.sco{
+    background-color: rgba(255, 0, 0, 0);
+}
