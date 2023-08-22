@@ -64,7 +64,11 @@ footer{
 }
 
 
-.buttons{ 
+.buttons{
+   /* position: absolute;
+   align-items: center;
+   left:25%;
+   bottom:25%;  */
    background-color: rgba(0, 0, 0, 0);
 }
 
@@ -86,6 +90,7 @@ footer{
 .responsiveP{
     visibility: hidden;
 }
+
 
 @media(max-width:600px){
     .responsiveP{
