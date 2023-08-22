@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>snake</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<h1>Snake Game</h1>
-<div id="S">
-<span class="sco">Score:</span>
-<span id="score" class="sco"></span>
-</div>
-<canvas id="board"></canvas>
-<!-- <button onclick="slow()">slow</button>
-<button onclick="medium()">medium</button>
-<button onclick="fast()">fast</button> -->
-<footer>made by Sachin A</footer>
+    <h1>Snake Game</h1>
+    <span id="score" class="S">Current Score: 0</span>
+    
+    <canvas id="board"></canvas>
+    
+    <div class="buttons">
+        <div class="side"><span class="button" id="up" onclick="changeDirection(38)"></span></div>
+        <div class="side">
+            <span class="button" id="left" onclick="changeDirection(39)"></span>
+            <span class="button" id="right" onclick="changeDirection(37)"></span>
+        </div>
+        <div class="side"><span class="button" id="down" onclick="changeDirection(40)"></span></div>
+    </div>
+    
+    <footer>made by Sachin A</footer>
+    <div id="analysis-box">
+        <div id="game-analysis">
+            <p style="font-size: 200%; font-family: cursive;">GAME OVER</p>
+            <p id="final_score">your score: </p>
+            <br>
+            <button onclick="location.reload()">try again</button>
+        </div>
+    </div>
 </body>
 <script src="script.js"></script>
+
 </html>
