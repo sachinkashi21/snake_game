@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>snake</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
@@ -15,12 +16,12 @@
     <canvas id="board"></canvas>
     
     <div class="buttons">
-        <div class="side"><span class="button" id="up" onclick="changeDirection(38)"></span></div>
+        <div class="side"><span class="button" id="up" onclick="changeDirection(38)"><i class="fa-solid fa-arrow-up"></span></div>
         <div class="side">
-            <span class="button" id="left" onclick="changeDirection(39)"></span>
-            <span class="button" id="right" onclick="changeDirection(37)"></span>
+            <span class="button" id="left" onclick="changeDirection(39)"><i class="fa-solid fa-arrow-left"></span>
+            <span class="button" id="right" onclick="changeDirection(37)"><i class="fa-solid fa-arrow-right"></span>
         </div>
-        <div class="side"><span class="button" id="down" onclick="changeDirection(40)"></span></div>
+        <div class="side"><span class="button" id="down" onclick="changeDirection(40)"><i class="fa-solid fa-arrow-down"></span></div>
     </div>
     
     <footer>made by Sachin A</footer>
