@@ -51,7 +51,7 @@ function update(){
     if(snakeX == foodX && snakeY== foodY){
         snakebody.push([foodX,foodY]);
         score++;
-        document.getElementById('score').innerHTML= score;
+        document.getElementById('score').innerHTML= "Current Score: "+score;
         placeFood();
     }
 
@@ -76,36 +76,38 @@ function update(){
 
     if(snakeX < 0 || snakeX >= cols*block_size || snakeY < 0 || snakeY >= rows*block_size){
         gameOver=true;
-        alert('game over ', score);
-        window.onload;
+        document.getElementById("final_score").innerHTML="your score: " +score;
+        document.getElementById("game-analysis").style.visibility="visible";
+        
     }
-
+    
     for(let i=0;i<snakebody.length;i++){
         if(snakebody[i][0]==snakeX && snakebody[i][1]==snakeY){
             gameOver=true;
-            alert('game over');
-           
+            document.getElementById("final_score").innerHTML="your score: " +score;
+            document.getElementById("game-analysis").style.visibility="visible";
+            
         }   
     }
 }
 
 function changeDirection(e){
     console.log(e);
-    if(e.code == 'ArrowUp' && velocityY != 1){
+    if((e.code == 'ArrowUp' && velocityY != 1) || (e == 38 && velocityY != 1)){
         velocityX = 0;
         velocityY = -1;
     }
-    else if(e.code == 'ArrowDown' && velocityY != -1){
+    else if((e.code == 'ArrowDown' && velocityY != -1) || (e == 40 && velocityY != -1)){
         velocityX = 0;
         velocityY = 1;
     }
 
-    else if(e.code == 'ArrowLeft' && velocityX != 1){
+    else if((e.code == 'ArrowLeft' && velocityX != 1) || (e==39 && velocityX != 1)){
         velocityX = -1;
         velocityY = 0;
     }
     
-    else if(e.code == 'ArrowRight' && velocityX != -1){
+    else if((e.code == 'ArrowRight' && velocityX != -1) || (e == 37 && velocityX != -1)){
         velocityX = 1;
         velocityY = 0;
     }
@@ -115,3 +117,4 @@ function placeFood(){
     foodX= Math.floor(Math.random()*cols)*block_size;
     foodY= Math.floor(Math.random()*rows)*block_size;
 }
+
