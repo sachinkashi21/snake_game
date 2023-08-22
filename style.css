@@ -1,5 +1,6 @@
 *{
     background-color: rgb(197, 228, 255);
+    /* opacity: 90%; */
 }
 
 body{
@@ -9,11 +10,12 @@ body{
     text-align: center;
     border: solid 2px rgb(0, 0, 0);
     background-color: rgba(75, 32, 182, 0.384);
+    
 }
 
 h1{
     color:lime;
-    background-color: rgba(255, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 footer{
@@ -23,17 +25,63 @@ footer{
     bottom: 30px;
     right: 50px;
     color: aliceblue;
-    background-color: rgba(255, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
-#S{
+.S{
     position: fixed;
     display:inline;
     top:20px;
     left:10px;
-    background-color: rgba(255, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
-.sco{
-    background-color: rgba(255, 0, 0, 0);
+#analysis-box{
+    visibility: hidden;
+    width:100vw;
+    height:100vh;
+    position: absolute;
+    left:0px;
+    top: 0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: linear-gradient( 90 deg ,#042838 ,#4057A7 );
+}
+
+#game-analysis{
+    visibility: hidden;
+    width:40vw;
+    height:30vh;
+    background-color: linear-gradient( 90 deg ,#042838 ,#4057A7 );
+    border: solid 2px white ;
+    box-shadow: 10px 10px 20px 10px rgb(81, 81, 81);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.buttons{
+   position: absolute;
+   align-items: center;
+   left:25%;
+   bottom:25%; 
+   background-color: rgba(0, 0, 0, 0);
+}
+
+.button{
+    width:100px;
+    border-radius: 50px;
+    background-color: blue;
+    border: solid 2px white;
+}
+
+.side{
+    height:5vh;
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0);
 }
